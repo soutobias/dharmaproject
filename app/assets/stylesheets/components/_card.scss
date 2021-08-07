@@ -1,0 +1,35 @@
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.card-1 {
+  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('grapho_1.gif');
+  background-repeat:repeat;
+}
+
+.card-2 {
+  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('hilbert3d.gif');
+  background-repeat:repeat;
+}
+
+
+.card-3 {
+  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('insight.gif');
+  background-repeat:repeat;
+}
+
+.card-4 {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), asset-url('gif_election.gif');
+  background-repeat:repeat;
+}

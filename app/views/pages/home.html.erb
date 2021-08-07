@@ -1,2 +1,35 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner w-100">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3 m-0">
+      <%= link_to whatwedo_path do %>
+        <div class="card-category card-1">
+          WHAT WE DO
+        </div>
+      <% end %>
+    </div>
+    <div class="col-3 m-0">
+      <%= link_to study_case_path do %>
+        <div class="card-category card-4">
+          STUDY CASE
+        </div>
+      <% end %>
+    </div>
+    <div class="col-3 m-0">
+      <%= link_to howwedo_path do %>
+        <div class="card-category card-2">
+          HOW WE DO
+        </div>
+      <% end %>
+    </div>
+    <div class="col-3 m-0">
+      <%= link_to insight_path do %>
+        <div class="card-category card-3">
+          INSIGHTS
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
