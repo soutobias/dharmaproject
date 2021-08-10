@@ -73,15 +73,51 @@
           <li>
             <%= form_tag study_case_path, method: :get, class: 'form-horizontal d-flex mt-5' do %>
               <% if @value == 6 %>
-                <%= submit_tag "NOV-DEZ", class: "btn btn-success align-middle button" %>
+                <%= submit_tag "NOV", class: "btn btn-success align-middle button" %>
               <% else %>
-                <%= submit_tag "NOV-DEZ", class: "btn btn-outline-success align-middle button" %>
+                <%= submit_tag "NOV", class: "btn btn-outline-success align-middle button" %>
               <% end %>
             <% end %>
           </li>
+          <% if @value == 1 %>
+            <li>
+              <div class="pt-3 mt-5">
+                <p class="btn btn-danger align-middle button" id='show1'>ANALISYS</p>
+              </div>
+            </li>
+          <% end %>
+          <% if @value == 5 %>
+            <li>
+              <div class="pt-3 mt-5">
+                <p class="btn btn-danger align-middle button" id='show5'>ANALISYS</p>
+              </div>
+            </li>
+          <% end %>
+          <% if @value == 6 %>
+            <li>
+              <div class="pt-3 mt-5">
+                <p class="btn btn-danger align-middle button" id='show6'>ANALISYS</p>
+              </div>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
+    <% if @value == 1 %>
+      <div class="inactive-tab" id='sh1'>
+        <%= image_tag "image18.png", class: 'image-wwd10' %>
+      </div>
+    <% end %>
+    <% if @value == 5 %>
+      <div class="inactive-tab" id='sh5'>
+        <%= image_tag "image18.png", class: 'image-wwd10' %>
+      </div>
+    <% end %>
+    <% if @value == 6 %>
+      <div class="inactive-tab" id='sh6'>
+        <%= image_tag "image18.png", class: 'image-wwd10' %>
+      </div>
+    <% end %>
     <div class="d-flex mt-4">
       <% if @value == 1 %>
         <%= render "t1", cached: true %>
@@ -99,8 +135,11 @@
         <%= render "t9", cached: true %>
         <%= render "t10", cached: true %>
       <% elsif @value == 6 %>
-        <%= render "t11", cached: true %>
-        <%= render "t12", cached: true %>
+        <div class="row">
+          <div class="col-12 offset-md-6">
+            <%= render "t11", cached: true %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>

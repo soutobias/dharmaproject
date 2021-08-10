@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 import { toogleTab } from '../components/init_tabs';
+import { showAnalisys1, showAnalisys2, showAnalisys3 } from '../components/init_analisys';
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -33,4 +34,7 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   toogleTab();
+  showAnalisys1();
+  showAnalisys2();
+  showAnalisys3();
 });

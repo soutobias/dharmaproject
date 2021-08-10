@@ -26,7 +26,7 @@ class PagesController < ApplicationController
         @value = 4
       elsif params[:commit] == 'SET-OUT'
         @value = 5
-      elsif params[:commit] == 'NOV-DEZ'
+      elsif params[:commit] == 'NOV'
         @value = 6
       end
     end
