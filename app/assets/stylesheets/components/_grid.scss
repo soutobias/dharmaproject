@@ -10,7 +10,7 @@
 }
 
 .image-wwd2{
-  height: 200px;
+  height: 250px;
   border-radius: 25px;
 }
 .image-wwd3{
@@ -47,11 +47,40 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+.p-small-wwd{
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: strong;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-style: italic;
+}
+
+
+.p2-wwd{
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.p3-wwd{
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-weight: strong;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 
 .p-wwd{
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

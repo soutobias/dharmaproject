@@ -1,9 +1,9 @@
+<%= render 'shared/navbar' %>
 <div class="banner-wwd d-flex align-items-center">
     <div class="container text-center justify-content-center">
       <h1 class="font-weight-bold banner-1-h1 align-middle">WHAT WE DO</h1>
     </div>
 </div>
-
 <div class="container cont-2">
   <ul class="list-inline tabs-underlined w-100 justify-content-center">
     <li>
@@ -29,78 +29,86 @@
     </li>
 
   </ul>
-  <div class="row" id='tab-1'>
-    <div class="col-6">
-      <%= image_tag "jornal.png", class: 'image-wwd1' %>
-    </div>
-    <div class="col-6">
-      <h2 class='h2-wwd'>
-        Contexto
-      </h2>
+  <div class="row text-center" id='tab-1'>
+    <div class="col-12">
       <p class="p-wwd">
-        Somos bombardeados com notícias a todo momento
+        We are bombarded with <span style="background-color: red"><strong>news</strong></span> and news at <span style="background-color: red"><strong>all times</strong></span> and we believe that every text is a reflection of the society in which the author is inserted, and that, just as <strong>news influences us</strong>, we influence the news, in a reflexive movement. In this way, we seek to show which are the <span style="background-color: red"><strong>current narratives</strong></span> and which are possible <span style="background-color: red"><strong>emerging narratives</strong></span>.
       </p>
     </div>
-  </div>
-  <div class="row inactive-tab" id='tab-2'>
-    <div class="col-3">
-      <%= image_tag "giphy.gif", alt: "this slowpoke moves",  class: 'image-wwd2' %>
+    <div class="col-4">
+      <%= image_tag "jornal.png", class: 'image-wwd2' %>
     </div>
-    <div class="col-6">
-      <h2 class='h2-wwd'>
-        Contexto
-      </h2>
-      <p class="p-wwd">
-        Somos bombardeados com notícias a todo momento
-      </p>
-    </div>
-    <div class="col-3">
+    <div class="col-4">
       <%= image_tag "giphy_1.gif", alt: "this slowpoke moves",  class: 'image-wwd3' %>
     </div>
-  </div>
-  <div class="row inactive-tab"  id='tab-3'>
-    <div class="col-12">
-      <%= image_tag "giphy_2.gif", alt: "this slowpoke moves",  class: 'image-wwd4' %>
+    <div class="col-4">
+      <%= image_tag "giphy.gif", alt: "this slowpoke moves",  class: 'image-wwd2' %>
     </div>
   </div>
-  <div class="row inactive-tab"  id='tab-4'>
-    <div class="col-6">
-      <h2 class='h2-wwd'>
-        Acontece que...
+  <div class="row inactive-tab text-center" id='tab-2'>
+    <div class="col-12">
+      <p class="p2-wwd">
+        <strong>We are not looking for the so-called 'truth'</strong> nor do we intend to make a prediction of the future. We do want to find common knowledge, or what agents believe other agents believe to be the 'truth'.
+      </p>
+      <p class="p2-wwd">
+        So we look to answer two questions...
+      </p>
+
+      <p class="p3-wwd"><span style="background-color: red">When do narratives change and what is already 'priced in'?</span></p>
+      <p class="p3-wwd"><span style="background-color: red">Who said what and why?</span></p>
+    </div>
+  </div>
+  <div class="row inactive-tab text-center"  id='tab-3'>
+    <div class="col-12">
+      <h2 class='h2-wwd pb-3'>
+        It happens that...
       </h2>
-    </div>
-    <div class="col-6">
-      <p class="p-wwd">
-        ...todas essas INÚMERAS NARRATIVAS acabam por INFLUENCIAR nossa formação de OPINIÃO, sem que sejamos capazes de entender O QUE REALMENTE SABEMOS e O QUE REALMENTE IMPORTA para tomarmos uma DECISÃO!
+      <p class='p2-wwd'>
+        With all possible <span style="background-color: red">NARRATIVES</span> out there, which one should <span style="background-color: red">WE MONITOR</span>? Which will prevail? How those narratives end up influencing our own opinions and preventing us to know <span style="background-color: red">WHAT REALLY MATTERS</span> to make a <span style="background-color: red">DECISION</span>!
       </p>
     </div>
   </div>
-  <div class="row inactive-tab"  id='tab-5'>
+  <div class="row inactive-tab text-center"  id='tab-4'>
+    <div class="col-6">
+      <p class="p-wwd">
+        Using <span style="background-color: red">state-of-the-art algorithms</span>, we propose a topological search through relationships between actors, facts and available information. Supported by a strong theoretical basis involving graph theory, complex systems analysis, network analysis, information theory, game theory and discourse analysis to <span style="background-color: red">offer differentiated insights based on news</span>.
+      </p>
+    </div>
+    <div class="col-6">
+      <%= image_tag "giphy_3.gif", alt: "this slowpoke moves",  class: 'image-wwd2' %>
+    </div>
+  </div>
+  <div class="row inactive-tab text-center"  id='tab-5'>
     <div class="col-12">
       <p class="p-wwd">
-        E se fosse possível saber, usando tecnologia e ciência de dados, quais as NARRATIVAS VIGENTES/EMERGENTES e assim tomar uma DECISÃO VERDADEIRAMENTE FUNDAMENTADA?
-      </p>
-      <%= image_tag "giphy_3.gif", alt: "this slowpoke moves",  class: 'image-wwd5' %>
-    </div>
-  </div>
-  <div class="row inactive-tab justify-content-around align-middle align-items-center"  id='tab-6'>
-    <div class="col-6">
-      <p class="p-wwd">
-        That's how it's founded...
+        Meet the <span style="background-color: red">'next level'</span> of news consuming and search for narratives and trends, in a profound analysis not offered in the market, be as news agnostic as possible to opinions with the tools we offer. We are not looking for the short term trend or to bullseye the exact day a narrative is created, but rather find emerging and persistinting narratives.
       </p>
     </div>
-    <div class="col-6">
-      <%= image_tag "banner.jpg", alt: "this slowpoke moves",  class: 'image-wwd1' %>
-    </div>
-  </div>
-  <div class="row inactive-tab justify-content-around align-middle align-items-center"  id='tab-7'>
     <div class="col-12">
-      <p class="p-wwd">
+      <p class="p2-wwd">
+        That's why it's created...
+      </p>
+    </div>
+    <div class="col-12">
+      <%= image_tag "banner.jpg", alt: "this slowpoke moves",  class: 'image-wwd3' %>
+    </div>
+    <div class="col-12">
+      <p class="p-small-wwd pt-5">
+        *According to Wikipedia, "There is no single word translation for "dharma" in Western languages. The meaning of the word "dharma" depends on context, and its meaning has evolved as the ideas of Hinduism have developed over its long history, in older texts, dharma meant cosmic law. In later Vedas, the meaning became refined, richer, complex, and the word "dharma" was applied in different contexts."
+        We like the interpretation of the word that "dharma designates human behaviors considered necessary in the universe, principles that prevent chaos" and our search is through the chaotic relations between agents and narratives that move the world. Also, this other passage "with respect to its spiritual meaning, it can be considered as the "Way to Higher Truth". In a way, excusing the mixing of different meanings and with all due respect to its sacred meaning, we are somehow also searching for some truth, even though we don't, by all means, have the pretension to call it higher truth.
+      </p>
+    </div>
+  </div>
+  <div class="row inactive-tab justify-content-around align-middle align-items-center text-center"  id='tab-6'>
+    <div class="col-12">
+      <p class="p3-wwd">
         We want to do...
       </p>
     </div>
     <div class="col-12">
       <%= image_tag "giphy_3.gif", alt: "this slowpoke moves",  class: 'image-wwd5' %>
     </div>
+  </div>
+  <div class="row inactive-tab justify-content-around align-middle align-items-center"  id='tab-7'>
   </div>
 </div>

@@ -14,5 +14,21 @@ class PagesController < ApplicationController
   end
 
   def study_case
+    @value = 1
+    if params[:commit]
+      if params[:commit] == 'JAN-FEB'
+        @value = 1
+      elsif params[:commit] == 'MAR-APR'
+        @value = 2
+      elsif params[:commit] == 'MAY-JUN'
+        @value = 3
+      elsif params[:commit] == 'JUL-AUG'
+        @value = 4
+      elsif params[:commit] == 'SET-OUT'
+        @value = 5
+      elsif params[:commit] == 'NOV-DEZ'
+        @value = 6
+      end
+    end
   end
 end
