@@ -78,23 +78,23 @@
     </div>
     <div class="d-flex mt-4">
       <% if @value == 1 %>
-        <%= render "t9"%>
-        <%= render "t5"%>
+        <%= render "t9", cached: true %>
+        <%= render "t5", cached: true %>
       <% elsif @value == 2 %>
-        <%= render "t5"%>
-        <%= render "t9"%>
+        <%= render "t5", cached: true %>
+        <%= render "t9", cached: true %>
       <% elsif @value == 3 %>
-        <%= render "t1"%>
-        <%= render "t2"%>
+        <%= render "t1", cached: true %>
+        <%= render "t2", cached: true %>
       <% elsif @value == 4 %>
-        <%= render "t9"%>
-        <%= render "t5"%>
+        <%= render "t9", cached: true %>
+        <%= render "t5", cached: true %>
       <% elsif @value == 5 %>
-        <%= render "t9"%>
-        <%= render "t5"%>
+        <%= render "t9", cached: true %>
+        <%= render "t5", cached: true %>
       <% elsif @value == 6 %>
-        <%= render "t9"%>
-        <%= render "t5"%>
+        <%= render "t9", cached: true %>
+        <%= render "t5", cached: true %>
       <% end %>
     </div>
   </div>
