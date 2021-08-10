@@ -7,12 +7,18 @@
 <div class="container-d row">
   <div class="col-12 offset-md-1">
     <div class="row mt-5">
-      <div class="col-4 offset-md-1">
-        <%= image_tag "trump_hillary.png", class: 'image-wwd2' %>
+      <div class="col-12 offset-md-1">
+        <%= image_tag "election2.jpeg", class: 'image-wwd3' %>
       </div>
-      <div class="col-4  offset-md-2 text-center">
-        <p class="p2-wwd">
-          How did Donald Trump transform himself from a "meme" to a real candidate for the American presidency?
+      <div class="col-12  offset-md-1 text-center mt-5">
+        <p class="p-wwd">
+          As per our analysis, it is clear to see that Trump had much more exposure than other candidates (<span style="background-color: red">red squares</span>
+          against <span style="background-color: blue">blue squares</span>).
+          Even in topics that do not concern him, news made a way of showing his controversial thoughts. Looking back now seems that this much exposure had served him well.
+          Also, his violent discourse seemed to match the violent period in that year (<span style="background-color: green">green squares</span>).
+          We are not saying that by looking at our analysis one could infer the election results, but we tend to believe that
+          'Trump being elected' odds could be better than what the polls were showing<a href="https://www.thewrap.com/every-poll-that-got-election-wrong-donald-trump/">¹</a>.
+          And sometimes just one day ahead, one extra percentage point it is all that matters.
         </p>
       </div>
     </div>
@@ -78,23 +84,23 @@
     </div>
     <div class="d-flex mt-4">
       <% if @value == 1 %>
-        <%= render "t9", cached: true %>
-        <%= render "t5", cached: true %>
-      <% elsif @value == 2 %>
-        <%= render "t5", cached: true %>
-        <%= render "t9", cached: true %>
-      <% elsif @value == 3 %>
         <%= render "t1", cached: true %>
         <%= render "t2", cached: true %>
-      <% elsif @value == 4 %>
-        <%= render "t9", cached: true %>
+      <% elsif @value == 2 %>
+        <%= render "t3", cached: true %>
+        <%= render "t4", cached: true %>
+      <% elsif @value == 3 %>
         <%= render "t5", cached: true %>
+        <%= render "t6", cached: true %>
+      <% elsif @value == 4 %>
+        <%= render "t7", cached: true %>
+        <%= render "t8", cached: true %>
       <% elsif @value == 5 %>
         <%= render "t9", cached: true %>
-        <%= render "t5", cached: true %>
+        <%= render "t10", cached: true %>
       <% elsif @value == 6 %>
-        <%= render "t9", cached: true %>
-        <%= render "t5", cached: true %>
+        <%= render "t11", cached: true %>
+        <%= render "t12", cached: true %>
       <% end %>
     </div>
   </div>
