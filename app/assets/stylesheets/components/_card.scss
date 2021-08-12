@@ -11,25 +11,114 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  text-decoration: none;
+  :hover{
+    text-decoration: none  !important;
+  }
+}
+
+
+a {
+  text-decoration: none !important;
 }
 
 .card-1 {
+  text-decoration: none !important;
   background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('grapho_1.gif');
   background-repeat:repeat;
+  :hover{
+    text-decoration: none !important;
+  }
 }
 
 .card-2 {
+  text-decoration: none !important;
   background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('hilbert3d.gif');
   background-repeat:repeat;
+  :hover{
+    text-decoration: none !important;
+  }
 }
 
 
 .card-3 {
+  text-decoration: none !important;
   background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), asset-url('insight.gif');
   background-repeat:repeat;
+  :hover{
+    text-decoration: none !important;
+  }
 }
 
 .card-4 {
+  text-decoration: none !important;
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), asset-url('gif_election.gif');
   background-repeat:repeat;
+  :hover{
+    text-decoration: none !important;
+  }
+}
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip-infos h2{
+  color: white;
+}
+
+.card-trip-infos p{
+  color: white;
+}
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  margin-top: -60px;
+  width: 150px;
+}
+
+.linkedin{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.card-trip2{
+  padding-top: 80px;
+}
+
+.about-us{
+  background-image: linear-gradient(to bottom right, #F38E2C, #ED4F1C);
+  margin-top: 150px;
+  width: 200px;
+  // height: 500px;
 }

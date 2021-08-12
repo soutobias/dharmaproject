@@ -1,3 +1,4 @@
+<%= render 'shared/navbar2' %>
 <div class="banner row w-100">
   <div class="col-12 offset-md-1">
     <%= image_tag "banner.jpg", class: 'image-wwd1' %>
@@ -5,31 +6,31 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-3 m-0">
-      <%= link_to whatwedo_path do %>
+    <div class="col-3 m-0 none">
+      <%= link_to whatwedo_path, class: 'none' do %>
         <div class="card-category card-1">
           WHAT WE DO
         </div>
       <% end %>
     </div>
-    <div class="col-3 m-0">
+    <div class="col-3 m-0 none">
       <%= link_to study_case_path do %>
         <div class="card-category card-4">
           STUDY CASE
         </div>
       <% end %>
     </div>
-    <div class="col-3 m-0">
+    <div class="col-3 m-0 none">
       <%= link_to howwedo_path do %>
         <div class="card-category card-2">
           HOW WE DO
         </div>
       <% end %>
     </div>
-    <div class="col-3 m-0">
+    <div class="col-3 m-0 none">
       <%= link_to next_steps_path do %>
         <div class="card-category card-3">
-          NEXT STEPS
+          <p>NEXT STEPS</p>
         </div>
       <% end %>
     </div>
