@@ -21,7 +21,7 @@
     <li>
       <%= image_tag "number5.png", class: "tab-underlined", id:"tab5" %>
     </li>
-    <li>
+    <li class='inactive-tab'>
       <%= image_tag "number6.png", class: "tab-underlined", id:"tab6" %>
     </li>
     <li class='inactive-tab'>
@@ -106,7 +106,6 @@
       </p>
     </div>
     <div class="col-12 offset-md-1">
-      <%= render "3d", cache: true%>
     </div>
   </div>
   <div class="row inactive-tab justify-content-around align-middle align-items-center"  id='tab-7'>
