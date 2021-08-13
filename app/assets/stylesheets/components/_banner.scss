@@ -5,11 +5,21 @@
   margin-bottom: 40px;
   height: 350px;
   width: 100%;
+  font-family: "Courier New" !important;
+}
+
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
+#outer {
+  width:100%
 }
 
 body{
   background-color: #313030;
-  font-family: "Courier New";
+  font-family: "Courier New" !important;
 }
 
 
@@ -21,9 +31,11 @@ body{
   height: 220px;
   padding-top: 0px;
   width: auto;
+  font-family: "Courier New";
 }
 
 .banner-1-h1{
+  font-family: "Courier New" !important;
   justify-content: center;
   align-items: center;
   color: white;
@@ -35,4 +47,8 @@ body{
 .container-d{
   width: 80%;
   align-content: center;
+}
+
+.about-us{
+  font-family: "Courier New";
 }
